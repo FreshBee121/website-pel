@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pel Semprot Multifungsi 360° - Solusi Modern Bersihkan Lantai</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            line-height: 1.6;
+        }
+
+        .header-utama {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #2c3e50;
+            color: white;
+        }
+
+        .subjudul {
+            color: #bdc3c7;
+            margin-top: 0.5rem;
+        }
+        .img {
+            width: 250px;
+            height: 250px;
+            border-radius:  7px;
+            border: solid black 1px;
+        }
+
+        .gambar-hero {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .deskripsi {
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .spesifikasi {
+            display: grid;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .gambar-detail {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        .fitur-utama {
+            display: grid;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .fitur-box {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .keunggulan {
+            padding: 2rem 1rem;
+            background: #ffffff;
+        }
+
+        .grid-keunggulan {
+            display: grid;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .item-keunggulan {
+            text-align: center;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .item-keunggulan:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .penawaran {
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .harga-box {
+            background: #e74c3c;
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem auto;
+            max-width: 300px;
+        }
+
+        .harga-lama {
+            text-decoration: line-through;
+            display: block;
+            opacity: 0.8;
+        }
+
+        .harga-baru {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+            margin: 0.5rem 0;
+        }
+
+        .diskon {
+            background: white;
+            color: #e74c3c;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        .gratis-ongkir {
+            color: #27ae60;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        .timer {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1.5rem auto;
+            max-width: 400px;
+            font-family: monospace;
+            font-size: 1.2rem;
+            animation: 0.5s ease-in-out infinite alternate pulse;
+        }
+
+        @keyframes pulse {
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1); opacity: 0.9;
+            }
+        }
+
+        .tombol-beli {
+            display: block;
+            background: #25d366;
+            color: white;
+            padding: 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .tombol-beli:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(37,211,102,0.4);
+        }
+
+        @media (min-width: 768px) {
+            .grid-keunggulan {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .spesifikasi {
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-utama h1 {
+                font-size: 1.5rem;
+            }
+            
+            .harga-baru {
+                font-size: 1.5rem;
+            }
+            
+            .tombol-beli {
+                padding: 1rem;
+                font-size: 0.9rem;
+            }
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .logo-wa {
+            width: 24px; 
+            height: 24px; 
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-utama fade-in">
+        <h1>Pel Semprot Multifungsi 360°</h1>
+        <p class="subjudul">Bersihkan Lantai Lebih Cepat & Efisien!</p>
+    </header>
+
+    <main>
+        <section class="hero fade-in">
+            <img src="orientasi pel.png" alt="Pel Semprot 360 Derajat" class="gambar-hero">
+        </section>
+
+        <section class="deskripsi fade-in">
+            <h2>Desain Inovatif</h2>
+            <p>Alat pel dengan semprotan terintegrasi di tongkat untuk pembersihan praktis dan menyeluruh</p>
+            
+            <div class="spesifikasi fade-in">
+                <img src="detail-produk.jpg" alt="Detail Produk" class="gambar-detail fade-in">
+                <div class="fitur-utama">
+                    <div class="fitur-box fade-in">
+                        <img src="ukuran.png" alt="" class="img">
+                        <h3>📐 Ukuran Produk</h3>
+                        <p>40 x 13 x 126 cm <br>(±1-2 cm)</p>
+                    </div>
+                    <div class="fitur-box fade-in">
+                        <img src="botol.png" alt="" class="img">
+                        <h3>💧 Kapasitas Botol</h3>
+                        <p>0.35L (Cukup untuk 100m²)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="keunggulan fade-in">
+            <h2>Keunggulan Produk</h2>
+            <div class="grid-keunggulan fade-in">
+                <div class="item-keunggulan fade-in">
+                    <img src="pel 360.png" alt="" class="img">
+                    <div class="icon">🔄</div>
+                    <h3>Rotasi 360°</h3>
+                    <p>Mencapai sudut tersempit di segala ruangan</p>
+                </div>
+                <div class="item-keunggulan fade-in">
+                    <img src="kaca.png" alt="" class="img">
+                    <div class="icon">🧼</div>
+                    <h3>Multipermukaan</h3>
+                    <p>Cocok untuk kayu, marmer, vinyl, & ubin</p>
+                </div>
+                <div class="item-keunggulan fade-in">
+                    <img src="kain.png" alt="" class="img">
+                    <div class="icon">🧽</div>
+                    <h3>Microfiber Premium</h3>
+                    <p>Daya serap tinggi & mudah dibersihkan</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="penawaran fade-in">
+            <div class="harga-box">
+                <span class="harga-lama">Rp 240.000</span>
+                <span class="harga-baru">Rp 120.000</span>
+                <span class="diskon">50% OFF!</span>
+            </div>
+
+            <p class="gratis-ongkir">🚚 Gratis Ongkir Seluruh Indonesia</p>
+            <img src="gratisongkir1.png" alt="" class="img fade-in" style="border: none;">
+            
+            
+            <div class="timer fade-in">
+                ⏳ Waktu Tersisa: <span id="countdown">00:00:000</span>
+            </div>
+            
+        </section>
+        <a href="https://wa.me/6285136510337?text=Halo%20Admin,%20saya%20ingin%20membeli%20Pel%20Semprot%20360°.%20" class="tombol-beli">
+            <img src="whatsapp.png" alt="" class="logo-wa">BELI SEKARANG VIA WHATSAPP
+        </a>
+    </main>
+
+    <script>
+        // Timer countdown
+        let countdownTime = 1800000; // 30 menit dalam milidetik
+        const countdownElement = document.getElementById('countdown');
+
+        const countdownInterval = setInterval(() => {
+            const milliseconds = countdownTime % 1000;
+            const seconds = Math.floor((countdownTime / 1000) % 60);
+            const minutes = Math.floor((countdownTime / (1000 * 60)) % 60);
+            const hours = Math.floor((countdownTime / (1000 * 60 * 60)) % 24);
+
+            countdownElement.textContent = 
+                `${String(minutes).padStart(2, '0')}:` +
+                `${String(seconds).padStart(2, '0')}:` +
+                `${String(milliseconds).padStart(3, '0')}`;
+            
+            countdownTime -= 100;
+
+            if (countdownTime < 0) {
+                clearInterval(countdownInterval);
+                countdownElement.textContent = "PENAWARAN BERAKHIR!";
+            }
+        }, 100);
+
+        const fadeElements = document.querySelectorAll('.fade-in');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeElements.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
